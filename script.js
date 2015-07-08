@@ -21,6 +21,12 @@
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
 				controller  : 'contactController'
+			})
+
+			// route for the contact page
+			.when('/projects', {
+				templateUrl : 'pages/projects.html',
+				controller  : 'projectController'
 			});
 	});
 
@@ -36,4 +42,8 @@
 
 	App.controller('contactController', function($scope) {
 		$scope.message = 'Contact me and find out even more awesome things!';
+	});
+
+	App.controller('projectController', function($scope) {
+		$scope.message = 'dgdgdfgg';
 	});
